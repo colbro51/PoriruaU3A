@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Porirua U3A Homepage</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            #outer {
+                max-width: 960px;
+                margin: auto;
+                background-color: #f9f9f9;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 100%;   
+                border: 2px solid #CCC;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .top-picture {
+                max-width: 100%;
+                height: auto;
+            }
+            .content-wrapper {
+                max-width: 100%;
+            }
+            .content {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: column;
+            }
+            .button-table {
+                border-collapse: collapse; /* Merge borders of table cells */
+            }
+            .button-table td {
+                padding: 10px; /* Add spacing around buttons */
+                border: none; /* Remove cell borders */
+            }
+            .button-table button {
+                width: 100%; /* Make buttons occupy full cell width */
+            }
+            .button {
+                /*display: inline-block;*/
+	        display: flex;
+	        flex-direction: column;
+                padding: 10px 10px;
+                background-color: #4CAF50;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 6px;
+                transition: background-color 0.3s;
+            }
+            .button:hover {
+                background-color: #45a049;
+            }
+            #wrapper {
+                margin-top: 10px;
+                flex: 1;
+            }
+            .text-box {
+                /*width: 100%;*/
+                /*min-width: 780px;*/
+                width: 80vw;
+                max-width: 780px;
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                padding: 10px;
+                /*margin: 0 auto;*/
+                box-sizing: border-box;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                overflow: auto;
+            }
+            @media (max-width: 768px) {
+                .content {
+                    flex-direction: column;
+                }
+                .top-picture,
+                .buttons,
+                .text-box {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+	</style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('Button1').addEventListener('click', function1);
+                document.getElementById('Button2').addEventListener('click', function2);
+                document.getElementById('Button3').addEventListener('click', function3);
+                document.getElementById('Button4').addEventListener('click', function4);
+                document.getElementById('Button5').addEventListener('click', function5);
+                function function1() {
+                    window.location.href = 'https://colbro51.github.io/PoriruaU3A/Home.html';
+                }
+                function function2() {
+                    window.location.href = 'https://colbro51.github.io/PoriruaU3A/GroupEvents.html';
+                }
+                function function3() {
+                    window.location.href = 'https://colbro51.github.io/PoriruaU3A/Newsletters.html';
+                }
+                function function4() {
+                    window.location.href = 'https://colbro51.github.io/PoriruaU3A/Meetings.html';
+                }
+                function function5() {
+                    window.location.href = 'https://colbro51.github.io/PoriruaU3A/Contacts.html';
+                }
+            });
+        </script>
+    </head>
+    <body>
+      <div id="outer">
+        <div class="container">
+            <img src="Mana.jpg" alt="Top Picture" class="top-picture">
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="buttons">
+                        <table class="button-table">
+                            <tr><td><button class="button" id="Button1">Home</button></td></tr>
+                            <tr><td><button class="button" id="Button2">Group Events</button></td></tr>
+                            <tr><td><button class="button" id="Button3">Newsletters</button></td></tr>
+                            <tr><td><button class="button" id="Button4">Meetings</button></td></tr>
+                            <tr><td><button class="button" id="Button5">Contacts</button><//td></tr>
+                        </table> 
+                    </div>
+                <div id="wrapper">
+                    <div class="text-box">
+                        <h2><span style="color: #3366ff;"><b>Newsletter Archive</b></span></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div?
+            </div>
+        </div>
+      </div>
+    </body>
+</html>
