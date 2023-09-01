@@ -113,12 +113,22 @@
                     window.location.href = 'https://colbro51.github.io/PoriruaU3A/Contacts.html';
                 }
             });
+            var images = [], x = -1;
+            images[0] = "Mana.jpg";
+            images[1] = "Porirua.jpg";
+            function nextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img").src = images[x];
+            }
+            function startTimer() {
+                setInterval(nextImage, 5000);
+            }
         </script>
     </head>
-    <body>
+    <body onload="startTimer()">
       <div id="outer">
         <div class="container">
-            <img src="Mana.jpg" alt="Top Picture" class="top-picture">
+            <img id="img" src="Mana.jpg" class="top-picture">
             <div class="content-wrapper">
                 <div class="content">
                     <div class="buttons">
